@@ -6,9 +6,11 @@
 }
 
 :root {
-    --extra-large-h1:3em;
+    --extra-large-h1:4em;
+    --extra-large-h2:2.5vw;
     --h3-font-size: 2rem;
-    --primary-color: #0479DC;
+    --primary-color: #0003E2;
+    /* --primary-color: #0479DC; */
     --background-color: #d7e6f4;
     /* --primary-color: #08ADDB; */
     --secondary-color: #ee6c4d;
@@ -16,6 +18,12 @@
 
 .secondary-color {
     color: var(--secondary-color);
+}
+
+.section-container {
+    position: relative;
+    width: 80vw;
+    margin: 0 auto;
 }
 
 /* NAVAGATION */
@@ -244,4 +252,36 @@ section nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* SECTION THREE */
+.section-three-container {
+    display: flex;
+}
+#section-three-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: 50%; */
+}
+#section-three-large-text {
+    position: absolute;
+    /* top: 26%;*/
+    left: 22%;
+    top: 300px;
+    z-index: 2;
+}
+
+#section-three-large-text h2 {
+    font-size: var(--extra-large-h2);
+    line-height: 1.5;
+}
+
+#section-three-right-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
 }
